@@ -32,7 +32,7 @@ function searchCity(city){
     let apikey = "2f823f714013fa6686732f0c02dfd447";
     let apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&&units=metric`;
     axios.get(apiurl).then(showtemp);
-  }
+}
   
 function showtemp(response) {
     let temp = document.querySelector(".temp");
@@ -45,7 +45,10 @@ function showtemp(response) {
     wind.innerHTML = `Wind: ${response.data.wind.speed} m/s`;
     let name = document.querySelector("#city");
     name.innerHTML = response.data.name.toUpperCase();
-    }
+    let icon = document.querySelector("#icon");
+    icon.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    icon.setAttribute("alt", response.data.weather[0].description);
+  }
 
 function searchlocation(event) {
     event.preventDefault();
@@ -56,9 +59,9 @@ function showPosition(position) {
     let lon = position.coords.longitude;
     let apikey = "2f823f714013fa6686732f0c02dfd447";
     let apiurl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&&units=metric`;
-    axios.get(apiurl).then(showtemp);
+     axios.get(apiurl).then(showtemp);
   }
-   
+
 let curday_time = document.querySelector(".daytime");
 let now = new Date();
 curday_time.innerHTML = formatDate(now);
@@ -68,3 +71,22 @@ searchform.addEventListener("submit", enterCity);
 
 let searchmyloc = document.querySelector("#mylocation");
 searchmyloc.addEventListener("click", searchlocation);
+
+searchCity("Paris");
+
+function celsiusConverter() {
+    /*let number = document.querySelector(".temp");
+    number.innerHTML = "28";*/
+  }
+  
+  function fahrenheitConverter() {
+    /*let number = document.querySelector(".temp");
+    let temp = 28;
+    number.innerHTML = Math.round(temp * 1.8 + 32);*/
+  }
+  
+  let celsius = document.querySelector(".Celsius");
+  celsius.addEventListener("click", celsiusConverter());
+  
+  let fahrenheit = document.querySelector(".Fahrenheit");
+  fahrenheit.addEventListener("click", fahrenheitConverter);     

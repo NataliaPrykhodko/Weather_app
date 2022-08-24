@@ -30,16 +30,14 @@ input[type="button"] {
   border: none;
 }
 .image {
-  width: 100px;
-  display: block;
-  margin: 20px auto;
+  width: 120px;
+  margin: 0 auto;
 }
 
 .namecity {
-  padding-top: 30px;
   color: #6264d6;
-  font-size: 54px;
-  font-weight: 600;
+  font-size: 80px;
+  font-weight: 500;
   text-align: left;
 }
 
@@ -51,11 +49,20 @@ input[type="button"] {
 }
 .temp {
   color: #6264d6;
-  font-size: 134px;
+  font-size: 140px;
   font-weight: 80;
-  line-height: 1;
-  text-align: right;
-  font-stretch: condensed;
+  line-height: 120px;
+}
+
+.units {
+  font-size: 30px;
+  font-weight: 300;
+  vertical-align: top;
+  text-decoration: none;
+}
+.active{
+  color: #6264d6;
+  
 }
 
 .other {
@@ -81,12 +88,7 @@ input[type="button"] {
   font-size: 20px;
   font-weight: 400;
 }
-.grad {
-  font-size: 30px;
-  font-weight: 300;
-  color: #6264d6;
-  padding-top: 10px;
-}
+
 .celsius {
   padding-right: 30px;
 }

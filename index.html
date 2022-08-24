@@ -22,24 +22,22 @@
             </form>
             <div class="row">
                 <div class="col-2">
-                    <img src="./src/sunny.png" class="image" id="currentimage">
+                    <img src="" alt="" class="image" id="icon">
                 </div>
-                <div class="col-8 namecity" id="city">
-                    CITYNAME
-                </div>
+                <div class="col-8 namecity" id="city"> </div>
             </div>
             <div class="row">
                 <div class="col-4 daytime">
                 </div>
-                <div class="col-2 temp">
-                    28
-                </div>
-                <div class="col-2 grad">
-                    &#176;C
+                <div class="col-4">
+                    <span class="temp"></span>
+                    <span class="units">
+                        <a href="#" id="celsius" class="active">&#176;C</a> |
+                        <a href="#" id="fahrenheit">&#176;F</a>
+                    </span>
                 </div>
                 <div class="col-4 other">
                     <div class="info">
-                        Info
                         <br />
                     </div>
                     <div class="humidity">
@@ -50,41 +48,42 @@
                         Wind: XX m/s
                     </div>
                 </div>
-                <hr style="border: 2px solid #111112">
-                <div class="row">
-                    <div class="col forecast">
-                        Fri<br />
-                        <img src="./src/m-cloudy.png" class="image1">
-                        <div class="temperatura"> XX </div>
-                    </div>
-                    <div class="col forecast">
-                        Sat<br />
-                        <img src="./src/sunny.png" class="image1">
-                        <div class="temperatura"> XX°C </div>
-                    </div>
-                    <div class="col forecast">
-                        San<br />
-                        <img src="./src/m-cloudy.png" class="image1">
-                        <div class="temperatura"> XX°C </div>
-                    </div>
-                    <div class="col forecast">
-                        Mon<br />
-                        <img src="./src/m-c-rain.png" class="image1">
-                        <div class="temperatura"> XX°C </div>
-                    </div>
-                    <div class="col forecast">
-                        Tue<br />
-                        <img src="./src/m-cloudy.png" class="image1">
-                        <div class="temperatura"> XX°C </div>
-                    </div>
+            </div>
+            <hr style="border: 2px solid #111112">
+            <div class="row">
+                <div class="col forecast">
+                    Fri<br />
+                    <img src="./src/m-cloudy.png" class="image1">
+                    <div class="temperatura"> XX </div>
+                </div>
+                <div class="col forecast">
+                    Sat<br />
+                    <img src="./src/sunny.png" class="image1">
+                    <div class="temperatura"> XX°C </div>
+                </div>
+                <div class="col forecast">
+                    San<br />
+                    <img src="./src/m-cloudy.png" class="image1">
+                    <div class="temperatura"> XX°C </div>
+                </div>
+                <div class="col forecast">
+                    Mon<br />
+                    <img src="./src/m-c-rain.png" class="image1">
+                    <div class="temperatura"> XX°C </div>
+                </div>
+                <div class="col forecast">
+                    Tue<br />
+                    <img src="./src/m-cloudy.png" class="image1">
+                    <div class="temperatura"> XX°C </div>
                 </div>
             </div>
         </div>
-        <p>
-            <span style="padding-left: 70px">
-                <a href="https://github.com/NataliaPrykhodko/Weather_app">
-                    Open-source code</a>
-            </span> by Natalia Prykhodko
-        </p>
-        <script src="src/index.js"> </script>
+    </div>
+    <p>
+        <span style="padding-left: 70px">
+            <a href="https://github.com/NataliaPrykhodko/Weather_app">
+                Open-source code</a>
+        </span> by Natalia Prykhodko
+    </p>
+    <script src="src/index.js"> </script>
 </body>
