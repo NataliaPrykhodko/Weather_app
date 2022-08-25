@@ -39,7 +39,7 @@ function showtemp(response) {
     celsius_temp = Math.round(response.data.main.temp);
     temp.innerHTML = celsius_temp;
     let info = document.querySelector(".info");
-    info.innerHTML = response.data.weather[0].main;
+    info.innerHTML = response.data.weather[0].description.toUpperCase();
     let humidity = document.querySelector(".humidity");
     humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
     let wind = document.querySelector(".wind");
