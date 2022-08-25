@@ -50,19 +50,17 @@ input[type="button"] {
 .temp {
   color: #6264d6;
   font-size: 140px;
-  font-weight: 80;
   line-height: 120px;
 }
 
 .units {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 600;
   vertical-align: top;
-  text-decoration: none;
-}
+  }
 .active{
   color: #6264d6;
-  
+  text-decoration: none;
 }
 
 .other {
@@ -87,24 +85,4 @@ input[type="button"] {
 .temperatura {
   font-size: 20px;
   font-weight: 400;
-}
-
-.celsius {
-  padding-right: 30px;
-}
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-ul {
-  list-style-type: none;
-  padding-inline-start: 500px;
-}
-
-li {
-  display: inline;
-  padding: 0px;
 }
